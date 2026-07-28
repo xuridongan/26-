@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>saft_city_gazebo</name>
+  <version>0.1.0</version>
+  <description>Gazebo simulation world for Safe City (平安城市) RAICOM 2026 - 4000mm×4000mm arena</description>
+  <maintainer email="xuan@todo.todo">xuan</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>gazebo_plugins</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_ros_control</depend>
+  <depend>xacro</depend>
+
+  <export>
+    <gazebo_ros gazebo_model_path="${prefix}/../"/>
+  </export>
+</package>

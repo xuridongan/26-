@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="person_sign_06">
+    <static>true</static>
+    <link name="sign">
+      <visual name="visual">
+        <pose>0 0 0.16 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.6 0.62</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://photo_signs/person_sign_06/materials/scripts</uri>
+            <uri>model://photo_signs/person_sign_06/materials/textures</uri>
+            <name>PhotoSign/person_sign_06</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>saft_city_perception</name>
+  <version>0.1.0</version>
+  <description>Perception integration node for Safe City - loads trained model for object detection</description>
+  <maintainer email="xuan@todo.todo">xuan</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>cv_bridge</depend>
+
+  <export/>
+</package>

@@ -1,0 +1,94 @@
+<robot>
+<!-- 头顶云台相机（IKJL控制）话题: /gimbal_camera/image_raw -->
+<!-- 云台底座（水平旋转） -->
+<link name="pan_link">
+  <visual>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+    <geometry><cylinder radius="0.025" length="0.06"/></geometry>
+    <material name="grey"><color rgba="0.5 0.5 0.5 1"/></material>
+  </visual>
+  <inertial><mass value="0.05"/><inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/></inertial>
+</link>
+<joint name="pan_joint" type="revolute">
+  <parent link="top_plate_link"/>
+  <child link="pan_link"/>
+  <origin xyz="0.1 0 0.12" rpy="0 0 0"/>
+  <axis xyz="0 0 1"/>
+  <limit lower="-3.14" upper="3.14" effort="0.1" velocity="1.0"/>
+</joint>
+<!-- 俯仰架 -->
+<link name="tilt_link">
+  <visual>
+    <origin xyz="0.02 0 0" rpy="0 0 0"/>
+    <geometry><box size="0.03 0.02 0.02"/></geometry>
+    <material name="blue"><color rgba="0.0 0.3 0.8 1"/></material>
+  </visual>
+  <inertial><mass value="0.03"/><inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00001"/></inertial>
+</link>
+<joint name="tilt_joint" type="revolute">
+  <parent link="pan_link"/>
+  <child link="tilt_link"/>
+  <origin xyz="0 0 0.04" rpy="0 0 0"/>
+  <axis xyz="0 1 0"/>
+  <limit lower="-1.57" upper="1.57" effort="0.1" velocity="1.0"/>
+</joint>
+<!-- 相机 -->
+<link name="gimbal_camera_link">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry><box size="0.025 0.02 0.02"/></geometry>
+    <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
+  </visual>
+  <inertial><mass value="0.02"/><inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00001"/></inertial>
+</link>
+<joint name="gimbal_camera_joint" type="fixed">
+  <parent link="tilt_link"/>
+  <child link="gimbal_camera_link"/>
+  <origin xyz="0.025 0 0" rpy="0 0 0"/>
+</joint>
+<transmission name="pan_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="pan_joint">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="pan_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="tilt_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="tilt_joint">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="tilt_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo reference="pan_joint">
+  <provideFeedback>true</provideFeedback>
+</gazebo>
+<gazebo reference="tilt_joint">
+  <provideFeedback>true</provideFeedback>
+</gazebo>
+<gazebo reference="gimbal_camera_link">
+  <sensor type="camera" name="gimbal_camera">
+    <always_on>true</always_on>
+    <update_rate>30</update_rate>
+    <camera>
+      <horizontal_fov>1.39626</horizontal_fov>
+      <image><width>640</width><height>480</height><format>R8G8B8</format></image>
+      <clip><near>0.05</near><far>10</far></clip>
+    </camera>
+    <plugin name="gimbal_camera_controller" filename="libgazebo_ros_camera.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>30.0</updateRate>
+      <cameraName>gimbal_camera</cameraName>
+      <imageTopicName>image_raw</imageTopicName>
+      <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+      <frameName>gimbal_camera_link</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+</robot>

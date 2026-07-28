@@ -1,0 +1,2442 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="track_walls">
+    <static>true</static>
+    <link name="segment_0">
+      <pose>-0.0636 -5.0557 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_1">
+      <pose>-1.9852 -5.0141 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_2">
+      <pose>-2.0919 -9.0610 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_3">
+      <pose>4.9026 2.0037 0.0672 0.0000 0.0000 1.6030</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_4">
+      <pose>2.0071 5.0050 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_5">
+      <pose>-0.0129 4.9969 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_6">
+      <pose>-2.0087 5.0126 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_7">
+      <pose>-9.0928 -2.9673 0.1394 0.0000 0.0000 -1.5906</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_8">
+      <pose>-9.0923 -1.0161 0.1254 0.0000 0.0000 -1.5716</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_9">
+      <pose>-9.0709 0.9973 0.0617 0.0000 0.0000 -1.6056</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_10">
+      <pose>-9.0882 2.9750 0.0239 0.0000 0.0000 -1.5889</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_11">
+      <pose>-3.0208 9.0894 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_12">
+      <pose>-1.0256 9.0649 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_13">
+      <pose>-0.0792 -9.0436 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_14">
+      <pose>0.9824 9.0794 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_15">
+      <pose>2.9768 9.0939 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_16">
+      <pose>8.9949 3.0067 0.0616 0.0000 0.0000 1.5429</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_17">
+      <pose>8.9987 0.9739 0.1033 0.0000 0.0000 1.5240</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_18">
+      <pose>9.0060 -1.0173 0.0746 0.0000 0.0000 -1.5592</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_19">
+      <pose>8.9863 -3.0230 0.0404 0.0000 0.0000 -1.5737</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_20">
+      <pose>1.9766 -9.0130 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_21">
+      <pose>1.9374 -5.0646 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_22">
+      <pose>-5.0511 -2.0249 0.0284 0.0000 0.0000 -1.5633</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_23">
+      <pose>-5.0722 -0.0241 0.1284 0.0000 0.0000 1.5549</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_24">
+      <pose>-5.0625 2.0098 0.0420 0.0000 0.0000 1.5852</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_25">
+      <pose>4.8982 -1.9092 0.1412 0.0000 0.0000 -1.6535</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_26">
+      <pose>4.9810 0.0038 0.0888 0.0000 0.0000 -1.5170</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_27">
+      <pose>-4.9471 -3.2880 0.0410 0.0000 0.0000 -1.1865</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_28">
+      <pose>-4.7203 -3.7355 0.0292 0.0000 0.0000 -0.9873</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_29">
+      <pose>-4.3785 -4.1792 0.1070 0.0000 0.0000 -0.7221</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_30">
+      <pose>4.8025 -3.1673 0.0295 0.0000 0.0000 1.3622</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_31">
+      <pose>4.8091 3.2971 0.0202 0.0000 0.0000 -1.1242</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_32">
+      <pose>4.5875 3.7770 0.0267 0.0000 0.0000 -0.9498</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_33">
+      <pose>4.3206 4.1969 0.0519 0.0000 0.0000 -0.8570</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_34">
+      <pose>3.9632 4.5181 0.0849 0.0000 0.0000 -0.6875</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_35">
+      <pose>3.5427 4.7957 0.0652 0.0000 0.0000 -0.4300</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_36">
+      <pose>3.1711 4.9541 0.0279 0.0000 0.0000 -0.3249</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_37">
+      <pose>-3.2952 4.9191 0.0793 0.0000 0.0000 0.3532</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_38">
+      <pose>-3.7448 4.7358 0.0642 0.0000 0.0000 0.4077</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_39">
+      <pose>-4.1375 4.4844 0.0469 0.0000 0.0000 0.5907</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_40">
+      <pose>-3.9684 -4.4937 0.1368 0.0000 0.0000 -0.5188</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_41">
+      <pose>-4.5089 4.1387 0.0642 0.0000 0.0000 0.7836</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_42">
+      <pose>-4.8132 3.7280 0.0712 0.0000 0.0000 1.0933</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_43">
+      <pose>-5.0062 3.2634 0.0714 0.0000 0.0000 1.2012</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_44">
+      <pose>3.2595 -9.0290 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_45">
+      <pose>3.6843 -8.9851 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_46">
+      <pose>4.1614 -8.9307 0.0228 0.0000 0.0000 0.1399</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_47">
+      <pose>4.5087 -8.8401 0.0686 0.0000 0.0000 0.2020</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_48">
+      <pose>4.9636 -8.6528 0.0234 0.0000 0.0000 0.3504</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_49">
+      <pose>5.4002 -8.4568 0.0395 0.0000 0.0000 0.3012</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_50">
+      <pose>5.8500 -8.2442 0.0227 0.0000 0.0000 0.6785</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_51">
+      <pose>-3.5180 -4.7778 0.1835 0.0000 0.0000 -0.3693</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_52">
+      <pose>6.2684 -7.9627 0.0429 0.0000 0.0000 0.5347</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_53">
+      <pose>6.6634 -7.6703 0.0354 0.0000 0.0000 0.7563</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_54">
+      <pose>7.0432 -7.3135 0.0496 0.0000 0.0000 0.6893</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_55">
+      <pose>7.4157 -6.9744 0.0377 0.0000 0.0000 0.7709</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_56">
+      <pose>7.7312 -6.5700 0.0590 0.0000 0.0000 0.9758</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_57">
+      <pose>8.0183 -6.1371 0.1028 0.0000 0.0000 0.9444</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_58">
+      <pose>8.2679 -5.6979 0.1695 0.0000 0.0000 1.1534</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_59">
+      <pose>8.4722 -5.2353 0.0744 0.0000 0.0000 1.1733</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_60">
+      <pose>8.6568 -4.7478 0.1420 0.0000 0.0000 1.2167</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_61">
+      <pose>8.8659 -4.2357 0.1766 0.0000 0.0000 1.3081</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_62">
+      <pose>-3.1099 -4.9368 0.0937 0.0000 0.0000 -0.3085</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_63">
+      <pose>8.8873 4.2464 0.0533 0.0000 0.0000 -1.2348</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_64">
+      <pose>8.6867 4.7195 0.0285 0.0000 0.0000 1.8461</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_65">
+      <pose>8.5186 5.2117 0.0812 0.0000 0.0000 -1.2333</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_66">
+      <pose>8.3424 5.6732 0.0601 0.0000 0.0000 -1.0145</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_67">
+      <pose>8.1077 6.1225 0.0931 0.0000 0.0000 -1.1559</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_68">
+      <pose>7.8393 6.5487 0.1691 0.0000 0.0000 -0.7712</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_69">
+      <pose>4.1697 8.9832 0.0871 0.0000 0.0000 -0.2779</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_70">
+      <pose>7.5177 6.9363 0.1331 0.0000 0.0000 -0.7958</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_71">
+      <pose>7.1625 7.3062 0.0729 0.0000 0.0000 -0.7845</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_72">
+      <pose>6.8060 7.6851 0.0699 0.0000 0.0000 -0.7051</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_73">
+      <pose>3.1123 -4.9455 0.0083 0.0000 0.0000 0.4402</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_74">
+      <pose>6.4072 7.9778 0.0639 0.0000 0.0000 -0.5844</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_75">
+      <pose>5.9490 8.2227 0.1355 0.0000 0.0000 -0.5457</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_76">
+      <pose>5.5373 8.4831 0.0698 0.0000 0.0000 -0.3416</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_77">
+      <pose>5.0654 8.6830 0.0550 0.0000 0.0000 -0.3925</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_78">
+      <pose>4.6003 8.8684 0.1022 0.0000 0.0000 -0.2482</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_79">
+      <pose>-4.2662 9.0499 0.0519 0.0000 0.0000 0.1225</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_80">
+      <pose>-4.7291 8.9363 0.0904 0.0000 0.0000 0.2133</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_81">
+      <pose>-6.1365 8.3549 0.0784 0.0000 0.0000 0.4741</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_82">
+      <pose>-5.6904 8.6185 0.1064 0.0000 0.0000 0.3186</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_83">
+      <pose>-5.2142 8.8004 0.0628 0.0000 0.0000 0.3012</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_84">
+      <pose>3.5874 -4.6883 0.0248 0.0000 0.0000 0.6887</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_85">
+      <pose>-6.5310 8.0361 0.1191 0.0000 0.0000 0.7564</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_86">
+      <pose>-6.9352 7.7172 0.1058 0.0000 0.0000 0.6833</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_87">
+      <pose>-7.3245 7.3951 0.0496 0.0000 0.0000 0.6700</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_88">
+      <pose>-7.6783 7.0621 0.0452 0.0000 0.0000 0.8461</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_89">
+      <pose>-8.0000 6.6659 0.1385 0.0000 0.0000 0.9101</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_90">
+      <pose>-8.2880 6.2413 0.1478 0.0000 0.0000 0.9916</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_91">
+      <pose>-8.5370 5.8103 0.0964 0.0000 0.0000 1.1702</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_92">
+      <pose>-8.7170 5.3421 0.1021 0.0000 0.0000 1.1670</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_93">
+      <pose>-8.8767 4.8642 0.1531 0.0000 0.0000 1.2962</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_94">
+      <pose>-8.9816 4.4436 0.0519 0.0000 0.0000 1.2605</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_95">
+      <pose>4.0203 -4.4008 0.0360 0.0000 0.0000 0.7156</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_96">
+      <pose>-8.9992 4.1192 0.0932 0.0000 0.0000 1.3989</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_97">
+      <pose>-3.3503 -9.0332 0.0000 0.0000 0.0000 0.0000</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_98">
+      <pose>-3.8452 -8.9562 0.0888 0.0000 0.0000 -0.0849</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_99">
+      <pose>-4.3313 -8.8383 0.0509 0.0000 0.0000 -0.2782</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_100">
+      <pose>-4.8275 -8.7143 0.0794 0.0000 0.0000 -0.2296</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_101">
+      <pose>-5.2696 -8.5323 0.0811 0.0000 0.0000 -0.3183</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_102">
+      <pose>-5.7188 -8.3603 0.0537 0.0000 0.0000 -0.5912</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_103">
+      <pose>-6.1636 -8.1287 0.0427 0.0000 0.0000 -0.6387</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_104">
+      <pose>-6.5577 -7.8572 0.0608 0.0000 0.0000 -0.7238</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_105">
+      <pose>-6.9524 -7.5487 0.0748 0.0000 0.0000 -0.5253</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_106">
+      <pose>4.3622 -4.0491 0.0496 0.0000 0.0000 0.7831</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_107">
+      <pose>-7.2988 -7.2293 0.0699 0.0000 0.0000 -0.7415</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_108">
+      <pose>-7.6051 -6.8609 0.1283 0.0000 0.0000 -1.0116</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_109">
+      <pose>-7.9233 -6.5008 0.0951 0.0000 0.0000 -0.9405</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_110">
+      <pose>-8.1945 -6.1255 0.0754 0.0000 0.0000 -1.1101</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_111">
+      <pose>-8.4536 -5.7087 0.0283 0.0000 0.0000 -1.0834</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_112">
+      <pose>-8.6281 -5.2441 0.0745 0.0000 0.0000 -1.1349</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_113">
+      <pose>-8.8197 -4.7769 0.0810 0.0000 0.0000 -1.2165</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_114">
+      <pose>-8.9313 -4.2291 0.0979 0.0000 0.0000 -1.2507</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="segment_115">
+      <pose>4.6388 -3.6510 0.0333 -0.0163 -0.0091 1.0625</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.02 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.6 1.0 0.3</ambient>
+          <diffuse>0.3 0.6 1.0 0.3</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

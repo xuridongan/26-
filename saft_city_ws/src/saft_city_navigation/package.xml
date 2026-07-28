@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>saft_city_navigation</name>
+  <version>0.1.0</version>
+  <description>Navigation and SLAM stack for Safe City (平安城市) RAICOM 2026</description>
+  <maintainer email="xuan@todo.todo">xuan</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>amcl</depend>
+  <depend>gmapping</depend>
+  <depend>map_server</depend>
+  <depend>move_base</depend>
+  <depend>global_planner</depend>
+  <depend>dwa_local_planner</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+
+  <export/>
+</package>

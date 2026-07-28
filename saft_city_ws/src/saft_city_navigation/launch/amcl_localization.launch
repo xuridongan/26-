@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="map_file" default="$(find saft_city_navigation)/maps/saft_city_map.yaml"/>
+  <arg name="scan_topic" default="front/scan"/>
+
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)"/>
+
+  <!-- AMCL -->
+  <node name="amcl" pkg="amcl" type="amcl" output="screen">
+    <rosparam file="$(find saft_city_navigation)/config/amcl_params.yaml" command="load"/>
+    <remap from="scan" to="$(arg scan_topic)"/>
+  </node>
+</launch>

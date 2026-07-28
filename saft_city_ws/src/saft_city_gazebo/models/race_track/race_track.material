@@ -1,0 +1,13 @@
+material race_track/ground
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture race.png
+      }
+    }
+  }
+}

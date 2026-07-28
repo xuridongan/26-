@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Arguments -->
+  <arg name="cmd_vel_topic" default="/cmd_vel"/>
+  <arg name="odom_topic" default="/odom"/>
+
+  <!-- Start move_base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+    <param name="base_global_planner" value="global_planner/GlobalPlanner"/>
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <param name="controller_frequency" value="10.0"/>
+    <param name="planner_frequency" value="5.0"/>
+    <remap from="move_base_simple/goal" to="move_base_internal/goal"/>
+
+    <!-- Common costmap (loaded into both global and local) -->
+    <rosparam file="$(find saft_city_navigation)/config/costmap_common_params.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find saft_city_navigation)/config/costmap_common_params.yaml" command="load" ns="local_costmap"/>
+
+    <!-- Global costmap -->
+    <rosparam file="$(find saft_city_navigation)/config/costmap_global_params.yaml" command="load" ns="global_costmap"/>
+    <param name="global_costmap/width" value="30.0"/>
+    <param name="global_costmap/height" value="30.0"/>
+
+    <!-- Local costmap -->
+    <rosparam file="$(find saft_city_navigation)/config/costmap_local_params.yaml" command="load" ns="local_costmap"/>
+    <param name="local_costmap/width" value="10.0"/>
+    <param name="local_costmap/height" value="10.0"/>
+
+    <!-- Planner -->
+    <rosparam file="$(find saft_city_navigation)/config/global_planner_params.yaml" command="load" ns="GlobalPlanner"/>
+    <rosparam file="$(find saft_city_navigation)/config/dwa_local_planner_params.yaml" command="load" ns="DWAPlannerROS"/>
+  </node>
+
+  <!-- Remap velocity command topic -->
+  <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+  <remap from="odom" to="$(arg odom_topic)"/>
+</launch>

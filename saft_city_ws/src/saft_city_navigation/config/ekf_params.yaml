@@ -1,0 +1,46 @@
+base_link_frame: base_link
+frequency: 50
+imu0: imu/data
+imu0_config:
+- false
+- false
+- false
+- true
+- true
+- true
+- false
+- false
+- false
+- true
+- true
+- true
+- false
+- false
+- false
+imu0_differential: true
+imu0_queue_size: 10
+imu0_remove_gravitational_acceleration: true
+odom0: husky_velocity_controller/odom
+odom0_config:
+- false
+- false
+- false
+- false
+- false
+- false
+- true
+- true
+- true
+- false
+- false
+- true
+- false
+- false
+- false
+odom0_differential: false
+odom0_queue_size: 10
+odom_frame: odom
+predict_to_current_time: true
+two_d_mode: true
+world_frame: odom
+

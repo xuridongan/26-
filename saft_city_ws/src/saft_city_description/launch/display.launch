@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="model" default="waffle_pi"/>
+  <env name="TURTLEBOT3_MODEL" value="$(arg model)"/>
+
+  <param name="robot_description"
+         command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro"/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+  <node name="rviz" pkg="rviz" type="rviz"
+        args="-d $(find saft_city_description)/config/display.rviz" required="true"/>
+</launch>

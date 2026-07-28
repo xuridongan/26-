@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="world_name" default="$(find saft_city_gazebo)/worlds/circular_track_walls.world"/>
+  <arg name="x" default="-0.5"/>
+  <arg name="y" default="-0.5"/>
+  <arg name="z" default="0.0"/>
+  <arg name="yaw" default="1.57"/>
+
+  <!-- 模型路径 -->
+  <env name="GAZEBO_MODEL_PATH" value="$(find saft_city_gazebo)/models:$(find saft_city_gazebo)/models/osrf_models:$(find saft_city_gazebo)/models/photo_signs:$(optenv GAZEBO_MODEL_PATH '')"/>
+
+  <!-- Gazebo + 赛道世界 -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <!-- 加载 Husky -->
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="z" value="$(arg z)"/>
+    <arg name="yaw" value="$(arg yaw)"/>
+    <arg name="joystick" value="false"/>
+  </include>
+</launch>

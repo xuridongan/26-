@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="saft_city_world">
+
+    <!-- Physics -->
+    <physics type="ode">
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <gravity>0 0 -9.81</gravity>
+    </physics>
+
+    <!-- Global light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- ============================================= -->
+    <!-- Arena: 4000mm x 4000mm (4m x 4m)             -->
+    <!-- Origin at center of arena                     -->
+    <!-- ============================================= -->
+
+    <!-- Floor marking - visual reference -->
+    <model name="arena_floor">
+      <static>true</static>
+      <link name="floor_link">
+        <visual name="floor_visual">
+          <pose>0 0 -0.005 0 0 0</pose>
+          <geometry>
+            <box size="3.98 3.98 0.01"/>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+        <collision name="floor_collision">
+          <pose>0 0 -0.005 0 0 0</pose>
+          <geometry>
+            <box size="3.98 3.98 0.01"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ============================================= -->
+    <!-- Arena Walls                                    -->
+    <!-- Wall positions: x,y at half-width offsets      -->
+    <!-- ============================================= -->
+    <!-- North Wall -->
+    <model name="wall_north">
+      <static>true</static>
+      <link name="wall_north_link">
+        <visual name="wall_north_visual">
+          <pose>0 2.0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="4.0 0.1 0.3"/>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.5 1</ambient>
+            <diffuse>0.3 0.3 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wall_north_collision">
+          <pose>0 2.0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="4.0 0.1 0.3"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- South Wall -->
+    <model name="wall_south">
+      <static>true</static>
+      <link name="wall_south_link">
+        <visual name="wall_south_visual">
+          <pose>0 -2.0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="4.0 0.1 0.3"/>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.5 1</ambient>
+            <diffuse>0.3 0.3 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wall_south_collision">
+          <pose>0 -2.0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="4.0 0.1 0.3"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- East Wall -->
+    <model name="wall_east">
+      <static>true</static>
+      <link name="wall_east_link">
+        <visual name="wall_east_visual">
+          <pose>2.0 0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="0.1 4.0 0.3"/>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.5 1</ambient>
+            <diffuse>0.3 0.3 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wall_east_collision">
+          <pose>2.0 0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="0.1 4.0 0.3"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- West Wall -->
+    <model name="wall_west">
+      <static>true</static>
+      <link name="wall_west_link">
+        <visual name="wall_west_visual">
+          <pose>-2.0 0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="0.1 4.0 0.3"/>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.5 1</ambient>
+            <diffuse>0.3 0.3 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wall_west_collision">
+          <pose>-2.0 0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="0.1 4.0 0.3"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ============================================= -->
+    <!-- Obstacle: Small interior walls / partitions    -->
+    <!-- ============================================= -->
+    <model name="inner_wall_1">
+      <static>true</static>
+      <link name="inner_wall_1_link">
+        <visual name="inner_wall_1_visual">
+          <pose>-0.5 0.5 0.1 0 0 0</pose>
+          <geometry>
+            <box size="0.8 0.05 0.2"/>
+          </geometry>
+          <material>
+            <ambient>0.6 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.4 0.4 1</diffuse>
+          </material>
+        </visual>
+        <collision name="inner_wall_1_collision">
+          <pose>-0.5 0.5 0.1 0 0 0</pose>
+          <geometry>
+            <box size="0.8 0.05 0.2"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="inner_wall_2">
+      <static>true</static>
+      <link name="inner_wall_2_link">
+        <visual name="inner_wall_2_visual">
+          <pose>0.5 -0.5 0.1 0 0 1.57</pose>
+          <geometry>
+            <box size="0.6 0.05 0.2"/>
+          </geometry>
+          <material>
+            <ambient>0.6 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.4 0.4 1</diffuse>
+          </material>
+        </visual>
+        <collision name="inner_wall_2_collision">
+          <pose>0.5 -0.5 0.1 0 0 1.57</pose>
+          <geometry>
+            <box size="0.6 0.05 0.2"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ============================================= -->
+    <!-- Buildings (楼宇)                                -->
+    <!-- ============================================= -->
+    <!-- Building 1: Tall building (NE area) -->
+    <model name="building_1">
+      <static>true</static>
+      <link name="building_1_link">
+        <visual name="building_1_visual">
+          <pose>1.2 1.2 0.25 0 0 0</pose>
+          <geometry>
+            <box size="0.5 0.5 0.5"/>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.6 1</ambient>
+            <diffuse>0.6 0.6 0.7 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+        <collision name="building_1_collision">
+          <pose>1.2 1.2 0.25 0 0 0</pose>
+          <geometry>
+            <box size="0.5 0.5 0.5"/>
+          </geometry>
+        </collision>
+        <!-- Fire/trouble indicator on top - red box -->
+        <visual name="hazard_indicator">
+          <pose>1.2 1.2 0.55 0 0 0</pose>
+          <geometry>
+            <box size="0.15 0.15 0.1"/>
+          </geometry>
+          <material>
+            <ambient>0.8 0.1 0.1 1</ambient>
+            <diffuse>1.0 0.1 0.1 1</diffuse>
+            <emissive>0.5 0.0 0.0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Building 2: Small building (NW area) -->
+    <model name="building_2">
+      <static>true</static>
+      <link name="building_2_link">
+        <visual name="building_2_visual">
+          <pose>-1.3 1.0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="0.4 0.4 0.3"/>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.6 1</ambient>
+            <diffuse>0.6 0.6 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="building_2_collision">
+          <pose>-1.3 1.0 0.15 0 0 0</pose>
+          <geometry>
+            <box size="0.4 0.4 0.3"/>
+          </geometry>
+        </collision>
+        <!-- Safe building - green indicator -->
+        <visual name="safe_indicator">
+          <pose>-1.3 1.0 0.35 0 0 0</pose>
+          <geometry>
+            <box size="0.15 0.15 0.1"/>
+          </geometry>
+          <material>
+            <ambient>0.1 0.8 0.1 1</ambient>
+            <diffuse>0.1 1.0 0.1 1</diffuse>
+            <emissive>0.0 0.5 0.0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Building 3: Medium building (SW area) -->
+    <model name="building_3">
+      <static>true</static>
+      <link name="building_3_link">
+        <visual name="building_3_visual">
+          <pose>-1.0 -1.2 0.2 0 0 0</pose>
+          <geometry>
+            <box size="0.35 0.45 0.4"/>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.6 1</ambient>
+            <diffuse>0.6 0.6 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="building_3_collision">
+          <pose>-1.0 -1.2 0.2 0 0 0</pose>
+          <geometry>
+            <box size="0.35 0.45 0.4"/>
+          </geometry>
+        </collision>
+        <!-- Hazard - yellow warning -->
+        <visual name="hazard_indicator">
+          <pose>-1.0 -1.2 0.45 0 0 0</pose>
+          <geometry>
+            <box size="0.15 0.15 0.1"/>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.1 1</ambient>
+            <diffuse>1.0 1.0 0.1 1</diffuse>
+            <emissive>0.5 0.5 0.0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ============================================= -->
+    <!-- Trash Bins (垃圾桶) - different types          -->
+    <!-- ============================================= -->
+    <!-- Recyclable bin (blue) -->
+    <model name="trash_bin_recycle">
+      <static>true</static>
+      <link name="trash_bin_recycle_link">
+        <visual name="trash_bin_visual">
+          <pose>1.2 -0.8 0.1 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.08" length="0.2"/>
+          </geometry>
+          <material>
+            <ambient>0.1 0.1 0.8 1</ambient>
+            <diffuse>0.1 0.2 1.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="trash_bin_collision">
+          <pose>1.2 -0.8 0.1 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.08" length="0.2"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Kitchen waste bin (green) -->
+    <model name="trash_bin_kitchen">
+      <static>true</static>
+      <link name="trash_bin_kitchen_link">
+        <visual name="trash_bin_kitchen_visual">
+          <pose>1.2 -1.1 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.15 0.15 0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.1 0.6 0.1 1</ambient>
+            <diffuse>0.1 0.8 0.1 1</diffuse>
+          </material>
+        </visual>
+        <collision name="trash_bin_kitchen_collision">
+          <pose>1.2 -1.1 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.15 0.15 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Hazardous waste bin (red) -->
+    <model name="trash_bin_hazard">
+      <static>true</static>
+      <link name="trash_bin_hazard_link">
+        <visual name="trash_bin_hazard_visual">
+          <pose>-1.3 -0.5 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.07" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.8 0.1 0.1 1</ambient>
+            <diffuse>1.0 0.1 0.1 1</diffuse>
+          </material>
+        </visual>
+        <collision name="trash_bin_hazard_collision">
+          <pose>-1.3 -0.5 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.07" length="0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ============================================= -->
+    <!-- Crowd Groups (人群)                             -->
+    <!-- ============================================= -->
+    <!-- Crowd group 1: 3 people (SE area) -->
+    <model name="person_1a">
+      <static>true</static>
+      <link name="person_1a_link">
+        <visual name="person_1a_visual">
+          <pose>1.5 1.5 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.9 0.6 0.3 1</ambient>
+            <diffuse>1.0 0.7 0.4 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_1a_collision">
+          <pose>1.5 1.5 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="person_1b">
+      <static>true</static>
+      <link name="person_1b_link">
+        <visual name="person_1b_visual">
+          <pose>1.6 1.4 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.3 0.6 0.9 1</ambient>
+            <diffuse>0.4 0.7 1.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_1b_collision">
+          <pose>1.6 1.4 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="person_1c">
+      <static>true</static>
+      <link name="person_1c_link">
+        <visual name="person_1c_visual">
+          <pose>1.5 1.3 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.6 0.9 0.3 1</ambient>
+            <diffuse>0.7 1.0 0.4 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_1c_collision">
+          <pose>1.5 1.3 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Crowd group 2: 2 people (NW area near building 2) -->
+    <model name="person_2a">
+      <static>true</static>
+      <link name="person_2a_link">
+        <visual name="person_2a_visual">
+          <pose>-1.6 1.5 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.3 1</ambient>
+            <diffuse>1.0 1.0 0.4 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_2a_collision">
+          <pose>-1.6 1.5 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="person_2b">
+      <static>true</static>
+      <link name="person_2b_link">
+        <visual name="person_2b_visual">
+          <pose>-1.7 1.4 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.3 0.9 0.9 1</ambient>
+            <diffuse>0.4 1.0 1.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_2b_collision">
+          <pose>-1.7 1.4 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Crowd group 3: 4 people (center area) -->
+    <model name="person_3a">
+      <static>true</static>
+      <link name="person_3a_link">
+        <visual name="person_3a_visual">
+          <pose>0.3 0.3 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.9 0.4 0.4 1</ambient>
+            <diffuse>1.0 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_3a_collision">
+          <pose>0.3 0.3 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="person_3b">
+      <static>true</static>
+      <link name="person_3b_link">
+        <visual name="person_3b_visual">
+          <pose>0.2 0.4 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.4 0.9 0.4 1</ambient>
+            <diffuse>0.5 1.0 0.5 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_3b_collision">
+          <pose>0.2 0.4 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="person_3c">
+      <static>true</static>
+      <link name="person_3c_link">
+        <visual name="person_3c_visual">
+          <pose>0.4 0.4 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.4 0.4 0.9 1</ambient>
+            <diffuse>0.5 0.5 1.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_3c_collision">
+          <pose>0.4 0.4 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="person_3d">
+      <static>true</static>
+      <link name="person_3d_link">
+        <visual name="person_3d_visual">
+          <pose>0.3 0.5 0.08 0 0 0</pose>
+          <geometry>
+            <cylinder radius="0.04" length="0.16"/>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.9 1</ambient>
+            <diffuse>0.9 0.9 0.9 1</diffuse>
+          </material>
+        </visual>
+        <collision name="person_3d_collision">
+          <pose>0.3 0.5 0.08 0 0 0</pose>
+          <geometry>
+            <box size="0.08 0.08 0.16"/>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ============================================= -->
+    <!-- Ambient lighting - additional spot lights     -->
+    <!-- ============================================= -->
+    <light name="arena_light_1" type="point">
+      <pose>0 0 3.0 0 0 0</pose>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>true</cast_shadows>
+    </light>
+
+  </world>
+</sdf>

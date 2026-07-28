@@ -1,0 +1,14 @@
+material PhotoSign/building_sign_01
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture building_sign_01.png
+      }
+    }
+  }
+}

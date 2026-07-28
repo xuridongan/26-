@@ -1,0 +1,14 @@
+material PhotoSign/trash_sign_03
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture trash_sign_03.png
+      }
+    }
+  }
+}

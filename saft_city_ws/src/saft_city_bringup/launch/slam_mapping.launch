@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- 建图模式：遥控 TurtleBot3 探索环形跑道 -->
+<launch>
+  <arg name="model" default="waffle_pi"/>
+  <env name="TURTLEBOT3_MODEL" value="$(arg model)"/>
+  <param name="use_sim_time" value="true"/>
+
+  <!-- Gazebo -->
+  <include file="$(find saft_city_gazebo)/launch/saft_city_world.launch"/>
+
+  <!-- TurtleBot3 -->
+  <include file="$(find saft_city_gazebo)/launch/spawn_robot.launch">
+    <arg name="model" value="$(arg model)"/>
+  </include>
+
+  <!-- SLAM -->
+  <include file="$(find saft_city_navigation)/launch/gmapping_slam.launch"/>
+
+  <!-- Rviz -->
+  <node name="rviz" pkg="rviz" type="rviz"
+        args="-d $(find saft_city_description)/config/navigation.rviz"/>
+</launch>

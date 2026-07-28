@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="race_track">
+    <static>true</static>
+    <link name="ground">
+      <collision name="collision">
+        <pose>0 0 -0.025 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>20.0 20.0 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0 0.005 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>20.0 20.0 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://race_track</uri>
+            <name>race_track/ground</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

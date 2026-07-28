@@ -1,0 +1,14 @@
+material PhotoSign/person_sign_02
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture person_sign_02.png
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- ============================================= -->
+  <!-- Select mode: slam or localization              -->
+  <!-- ============================================= -->
+  <arg name="mode" default="slam"/>
+  <!-- true: use SLAM mode, false: use AMCL localization with pre-built map -->
+  <arg name="slam" default="$(eval 'slam' == arg('mode'))"/>
+  <arg name="map_file" default="$(find saft_city_navigation)/maps/saft_city_map.yaml"/>
+
+  <!-- Run SLAM or localization -->
+  <group if="$(arg slam)">
+    <include file="$(find saft_city_navigation)/launch/gmapping_slam.launch"/>
+  </group>
+  <group unless="$(arg slam)">
+    <include file="$(find saft_city_navigation)/launch/amcl_localization.launch">
+      <arg name="map_file" value="$(arg map_file)"/>
+    </include>
+  </group>
+
+  <!-- Move base (navigation) -->
+  <include file="$(find saft_city_navigation)/launch/move_base.launch"/>
+
+</launch>

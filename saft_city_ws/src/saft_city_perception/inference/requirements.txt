@@ -1,0 +1,2 @@
+paddlepaddle-gpu>=3.0.0rc1
+paddledet>=3.0.0rc1

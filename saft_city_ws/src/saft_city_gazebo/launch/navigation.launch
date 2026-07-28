@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="x" default="0.7"/>
+  <arg name="y" default="-7.0"/>
+  <arg name="yaw" default="0.0"/>
+  <arg name="rviz" default="true"/>
+
+  <!-- Husky 传感器 -->
+  <env name="HUSKY_SENSOR_ARCH" value="1"/>
+  <env name="HUSKY_REALSENSE_ENABLED" value="1"/>
+  <env name="HUSKY_LMS1XX_ENABLED" value="1"/>
+  <env name="HUSKY_REALSENSE_XYZ" value="0.12 0 0.28"/>
+  <env name="HUSKY_REALSENSE_RPY" value="0 0.15 0"/>
+
+  <!-- 1. 世界 + Husky -->
+  <include file="$(find saft_city_gazebo)/launch/saft_city_world.launch">
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="yaw" value="$(arg yaw)"/>
+  </include>
+
+  <!-- 2. 地图服务器 -->
+  <node name="map_server" pkg="map_server" type="map_server"
+        args="$(find saft_city_navigation)/maps/track_map_v2.yaml"/>
+
+  <!-- 2.1 map → odom 静态 TF（机器人初始位置在 (0.7, -7.0)） -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_odom_bridge"
+        args="0.7 -7.0 0 0 0 0 1 map odom"/>
+
+  <!-- 3. move_base -->
+  <include file="$(find saft_city_navigation)/launch/move_base.launch"/>
+
+  <!-- 4. RViz -->
+  <node name="rviz" pkg="rviz" type="rviz"
+        args="-d $(find saft_city_description)/config/navigation.rviz"
+        required="false" if="$(arg rviz)"/>
+</launch>
